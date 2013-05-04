@@ -2,15 +2,13 @@ if ((window.File && window.FileReader && window.FileList && window.Blob) === und
     alert('The File APIs are not fully supported in this browser.');
 }
 
-console.log("loaded");
-var T = null;
-
 var DragAndDrop = {
     initialize: function(){
 	this.preview  = document.getElementById('preview');
 	this.droparea = document.getElementById('droparea');
 	this.droparea.addEventListener('dragover', this.handleDragOver, false);
 	this.droparea.addEventListener('drop', this.handleFileSelect, false);
+
 	document.onclick = function(e){
 	    var el = e.target;
 	    if((el.className === "close") && (el.nodeName === "A")){

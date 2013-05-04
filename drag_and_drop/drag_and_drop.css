@@ -1,4 +1,4 @@
-#droparea {
+.drag-and-drop #droparea {
     height: 125px;
     width: 300px;
     border-width: 1px;
@@ -6,15 +6,26 @@
     Background-color: rgb(252, 247, 247);
 }
 
-#droparea em {
+.drag-and-drop #droparea em {
     position: relative;
     top: 52px;
     left: 72px;
     color: #C0C0C0;
 }
 
-.thumb {
+.drag-and-drop .thumb {
     height: 75px;
     border: 1px solid #000;
     margin: 10px 5px 0 0;
+}
+
+.drag-and-drop .close {
+    position: relative;
+    top: -60px;
+    left: -20px;
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    padding: 2px;
+    text-decoration: none;
 }
